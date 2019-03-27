@@ -1,5 +1,7 @@
 # 嵌入式技能
 
+[![sites](SoC/SoC.png)](http://www.qitas.cn) 
+
 #### qitas@qitas.cn
 
 source from https://github.com/nhivp/Awesome-Embedded
