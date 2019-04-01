@@ -4,8 +4,6 @@
 
 #### qitas@qitas.cn
 
-source from https://github.com/nhivp/Awesome-Embedded
-
 - [嵌入式技能](#嵌入式技能)
   - [嵌入式软件](#软件开发)
   - [基础知识](#common)
@@ -14,7 +12,6 @@ source from https://github.com/nhivp/Awesome-Embedded
     - [MSP430](#msp430)
     - [MSP432](#msp432)
     - [STM32](#stm32)
-    - [STM8](#stm8)
     - [ESP8266](#esp8266)
   - [树莓派](#树莓派)
   - [Linux](#linux-programming)
@@ -82,7 +79,6 @@ source from https://github.com/nhivp/Awesome-Embedded
 
 ### STM32
 
-* [STM32 bootloader](http://ciesie.com/ks_stm32_bootloader.html)
 * [Tests to program STM32 Nucleo in C with GCC ARM embedded toolchain and libopencm3](https://github.com/balau/nucleo_tests)
 * [A demo project of FreeRTOS running on a STM32F4 Discovery board.](https://github.com/wangyeee/STM32F4-FreeRTOS)
 * [DFU Bootloader for STM32 chips](https://github.com/devanlai/dapboot)
@@ -103,13 +99,6 @@ source from https://github.com/nhivp/Awesome-Embedded
 * [STM32F7 Series](https://www.st.com/en/microcontrollers/stm32f7-series.html?querycriteria=productId=SS1858)
 * [STM32 eLinux](https://elinux.org/STM32)
 * [STM32F7 os.mbed](https://os.mbed.com/platforms/ST-Discovery-F746NG/)
-
-### STM8
-
-* [stm8-bare-min](https://github.com/lujji/stm8-bare-min) - Tiny peripheral library for STM8S
-* [stm8-bootloader](https://github.com/lujji/stm8-bootloader) - Serial bootloader for STM8S microcontrollers
-* [stm8-multi-tasker](https://github.com/vsch/stm8-multi-tasker) - STM8-Multi-Tasker - Preemptive/Cooperative Round Robin Scheduler for STM8
-* [Wolk STM8 stuff ](https://github.com/LonelyWolf/stm8)
 
 ### ESP8266
 
@@ -363,3 +352,6 @@ source from https://github.com/nhivp/Awesome-Embedded
 
 * [Mastering the Raspberry Pi](http://mensshed-llandudno.co.uk/wp-content/uploads/Mastering%20the%20Raspberry%20Pi.pdf)
 * [Modern C](http://icube-icps.unistra.fr/img_auth.php/d/db/ModernC.pdf)
+
+
+##  [SoC开发平台](http://www.qitas.cn)  
