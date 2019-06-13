@@ -1,37 +1,33 @@
-# 嵌入式技能
+# [嵌入式](https://github.com/sochub/links)
 
 [![sites](SoC/SoC.png)](http://www.qitas.cn) 
 
-#### qitas@qitas.cn
+#### 硬件开发工具：[EDA](https://github.com/sochub/EDA)
+#### 软件开发工具：[SDK](https://github.com/sochub/SDK)
 
-- [嵌入式技能](#嵌入式技能)
-  - [嵌入式软件](#软件开发)
+- [嵌入式](#嵌入式)
+  - [软件开发](#软件开发)
   - [基础知识](#common)
   - [MCU 开发](#mcu-programming)
-    - [裸驱](#裸驱)
+    - [ARM裸驱](#裸驱)
     - [MSP430](#msp430)
     - [MSP432](#msp432)
-    - [STM32](#stm32)
+    - [STM32F](#stm32)
     - [ESP8266](#esp8266)
-  - [树莓派](#树莓派)
-  - [Linux](#linux-programming)
   - [RTOS](#rtos)
-  - [Automotive](#automotive)
-  - [OS](#os)
-  - [Compiler](#compiler)
+  - [Linux](#linux-programming)
+  - [other OS](#os)
   - [Bootloader](#bootloader)
+  - [Compiler](#compiler)
   - [Makefile](#makefile)
   - [Peripheral](#peripheral)
-    - [Memory Protection Unit](#memory-protection-unit)
+    - [MPU](#memory-protection-unit)
     - [USB](#usb)
-  - [Embedded GUI Development](#embedded-gui-development)
+  - [Embedded GUI](#embedded-gui-development)
   - [Machine Learning & AI on MCU](#machine-learning--ai-on-mcu)
-  - [Utilities](#utilities)
-  - [Tips & tricks](#tips--tricks)
   - [Others](#others)
 - [Tech blogs](#tech-blogs)
-  - [FAQ_Embedded](#faqembedded)
-  - [Looking for more lists like this?](#looking-for-more-lists-like-this)
+  - [more links](#more-links)
   - [BOOKs](#books)
 
 
@@ -107,48 +103,6 @@
 * [Wi-FI ESP8266 learning journey](https://github.com/xuhongv/StudyInEsp8266)
 * [Wi-FI ESP32 learning journey](https://github.com/xuhongv/StudyInEsp32)
 
-## 树莓派
-
-* [Raspberry Pi Bare Metal](https://github.com/fordp2002/ArmCopro/wiki/Raspberry-Pi-Bare-Metal) & [related link](https://microeletroniki.wordpress.com/)
-* [ChibiOS/RT on the Raspberry Pi](https://www.stevebate.net/chibios-rpi/GettingStarted.html)
-* [Raspberry Pi ARM based bare metal examples](https://github.com/dwelch67/raspberrypi)
-* [Bare metal Raspberry Pi 3 tutorials](https://github.com/bztsrc/raspi3-tutorial)
-* [Open Projects: Raspberry, Beaglebone BSP](https://devel.rtems.org/wiki/Developer/OpenProjects)
-* [A Real-Time Operating System on the Raspberry Pi](http://www.pebblebay.com/raspberry-pi-embedded/)
-* [A port of FreeRTOS to the raspberry pi](https://github.com/jameswalmsley/RaspberryPi-FreeRTOS)
-* [FreeRTOS Sucessfully Ported](https://www.raspberrypi.org/forums/viewtopic.php?f=72&t=22423)
-* [Exploring AArch64 assembler - Raspberry](https://thinkingeek.com/2016/10/08/exploring-aarch64-assembler-chapter1/)
-* [A bootloader for the Raspberry Pi using the ethernet device](https://github.com/Nvreformat/Etherboot)
-* [Bare Metal Raspberry Pi](https://taylorpetrick.com/blog/post/bare-metal-pi-setup)
-* [Bare Metal Programming in C](http://www.valvers.com/open-software/raspberry-pi/step01-bare-metal-programming-in-cpt1/)
-* [Baking Pi – Operating Systems Development](https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/)
-* [Search for 'Raspberry' topic on Github](https://github.com/topics/raspberry-pi-3?l=c)
-* [elinux: Raspberry Pi Programming](https://elinux.org/Raspberry_Pi_Programming) or [elinux: RPi Hub](https://elinux.org/RPi_Hub)
-* [Stanford CS104e - An Experimental Course on Operating Systems](https://web.stanford.edu/class/cs140e/)
-* [Computer Systems](http://cs107e.github.io/)
-* [Build a Debian-based ARM64 system for Raspberry Pi 3](https://github.com/UMRnInside/RPi-arm64)
-* [Learning operating system development using Linux kernel and Raspberry Pi](https://github.com/s-matyukevich/raspberry-pi-os)
-* [A port of FreeRTOS to the raspberry pi 2B. With USB+Ethernet+TCP/IP.](https://github.com/Forty-Tw0/RaspberryPi-FreeRTOS)
-* [64-bit Tiano Core UEFI for the Raspberry Pi 3](https://github.com/andreiw/RaspberryPiPkg)
-* [CXCORE-RaspberryPi3-ubuntu-18.04-aarch64](https://github.com/chainsx/ubuntu64-rpi#cxcore-raspberrypi3-ubuntu-1804-aarch64--)
-* [Sample source: Baremetal source code for Raspberry](https://github.com/LdB-ECM/Raspberry-Pi)
-* [Sample source: NarcOS - A bare metal ultralight kernel for Raspberry Pi 3](https://github.com/forkachild/NarcOS)
-* [Sample source: FreeRTOS v9.0.0 port for Raspberry Pi 1](https://github.com/leodido99/RaspberryPi1-FreeRTOSv9.0.0)
-* [Sample source: A bare-metal experiments with the RaspberryPi](https://github.com/majorviraj/my-os)
-* [「BareMetalで遊ぶ Raspberry Pi」のプログラムです。](https://github.com/jitomesky/RPi_Micon_C85book)
-* [UEFI for RaspberryPi2 and RaspberryPi3 based on Linaro EDK2](https://github.com/ms-iot/RPi-UEFI)
-* [ARM-episodes](https://github.com/invictus1306/ARM-episodes) & [ARM exploitation for IoT](https://quequero.org/2017/07/arm-exploitation-iot-episode-1/)
-* [ARM shellcode and exploit development - BSidesMunich 2018](https://github.com/invictus1306/Workshop-BSidesMunich2018)
-* [64 bit Bare Metal Programming on RPI-3](https://archive.fosdem.org/2017/schedule/event/programming_rpi3/attachments/slides/1475/export/events/attachments/programming_rpi3/slides/1475/bare_metal_rpi3.pdf)
-* [Raspberry Pi 3 Bare Metal](https://adamransom.github.io/posts/raspberry-pi-bare-metal-part-1.html)
-* [Assembly code for Raspberry Pi](https://github.com/Alkesst/RPIAssembly)
-* [A public Baremetal Raspberry Pi code](https://github.com/LdB-ECM/Raspberry-Pi)
-* [Raspberry-Pi Bare Metal Tutorial](https://github.com/BrianSidebotham/arm-tutorial-rpi)
-* [uCOS-II on Raspberry Pi](https://github.com/fmlab/ucos_RaspberryPi)
-* [Porting uCOSII to the raspberry pi A+/B+/2B](https://github.com/mopplayer/uCOSII_RPi)
-* [Bare-metal examples](https://github.com/mrvn/RaspberryPi-baremetal)
-* [Bare-metal lab](https://github.com/tzuCarlos/RaspberryPi)
-
 ## Beaglebone
 
 * [BeagleBone Black I2C References](https://datko.net/2013/11/03/bbb_i2c/)
@@ -221,12 +175,6 @@
 * [TNKernel](http://www.tnkernel.com/index.html) - a compact and very fast real-time kernel for the embedded 32/16/8 bits microprocessors.
 * [Femto OS](http://www.femtoos.org/news.html) - a very concise portable real time - preemptive operating system (RTOS) for embedded microcontrollers with minimal ram and flash, say 2KB .. 16KB flash and 128 .. 1024 bytes ram.
 
-## Automotive
-
-* [Sample Source: Trampoline is a static RTOS for small embedded systems.](https://github.com/TrampolineRTOS/trampoline) & [labs](http://www.irccyn.ec-nantes.fr/~bechenne/trampoline-labs/)
-* [Sample source: An integration an example AUTOSAR project which every part in AUTOSAR (OS, RTE, BSW, MCAL) are collected from different open source.](https://github.com/leduynguyen/My_AUTOSAR_Project)
-* [automotive software(OSEK & AUTOSAR) ](https://github.com/parai/as) - Because I am not powerful so I decided to develop tiny but smart part of automotive software based on open source, and create a general AUTOSAR & Automotive Software study environment.
-
 ## OS
 
 * [ucLinux](http://www.uclinux.org/): The Embedded Linux/Microcontroller project is a port of Linux to systems without a Memory Management Unit (MMU).
@@ -275,12 +223,13 @@
 
 * [tinyusb](https://github.com/hathach/tinyusb) - A silly USB stack for Embedded System.
 
-
 ## Embedded GUI Development
+
 * [Embedded Wizard](https://www.embedded-wizard.de/) - Sophisticated GUI for Your Embedded Platform
 * [lvgl](https://littlevgl.com) - Graphics library to create an embedded GUI with easy-to-use graphical elements, beautiful visual effects and low memory footprint. It offers anti-aliasing, opacity, and animations using only one frame buffer.
 
 ## Machine Learning & AI on MCU
+
 * [nnom](https://github.com/majianjia/nnom) - A higher-level Neural Network library for microcontrollers.
 * [nn4mp](https://github.com/correlllab/nn4mp)
 * [Embedded Learning Library (ELL)](https://github.com/Microsoft/ELL) - Microsoft's library to deploy intelligent machine-learned models onto resource constrained platforms and small single-board computers.
@@ -290,20 +239,6 @@
 * [uTensor](https://github.com/uTensor/uTensor) - AI inference library based on mbed (an RTOS for ARM chipsets) and TensorFlow.
 * [EmbededAI](https://github.com/boralt/EmbeddedAI) - A library that provides elements of AI to C++ applications.
 * [kann](https://github.com/attractivechaos/kann) - A lightweight C library for artificial neural networks
-
-## Utilities
-
-* [lm4tools](https://github.com/utzig/lm4tools)
-* [mspdebug](https://github.com/dlbeer/mspdebug) - Debugging tool for MSP430 MCUs
-* [pycs](https://github.com/deadsy/pycs) - Python Based ARM CoreSight Debug and Trace Tools
-
-## Tips & tricks
-
-* [Awesome Cheat Sheets](https://github.com/mintisan/awesome-cheat-sheets/blob/master/README.md)
-> Awesome Cheat Sheets for Developer Utility, like Git, Vim , Tmux, SublimeText, Markdown, Shell.
-
-* [Vim Config for Reading Linux Kernel Source Code](https://github.com/mintisan/oh-my-vim)
-* [GNU GDB Debugger Command Cheat Sheet](http://www.yolinux.com/TUTORIALS/GDB-Commands.html)
 
 ## Others
 
@@ -331,12 +266,7 @@
 * [A Guide to Undefined Behavior in C and C++](https://blog.regehr.org/archives/213)
 * [Software Engineering Takeaways](https://blog.regehr.org/archives/1594)
 
-## FAQ_Embedded
-
-* [Boot section is removed (gcc, ld, ar, as)](https://www.embeddedrelated.com/showthread/lpc2000/47841-1.php)
-* [What are .axf files?](https://stackoverflow.com/questions/17761328/what-are-axf-files)
-
-## Looking for more lists like this?
+## more links
 
 * [awesome-c](https://github.com/uhub/awesome-c) - A curated list of awesome C frameworks, libraries and software.
 * [A curated list of project-based tutorials in C](https://github.com/rby90/Project-Based-Tutorials-in-C)
@@ -348,10 +278,9 @@
 * [awesome-cheat-sheets](https://github.com/mintisan/awesome-cheat-sheets) - Awesome Cheat Sheets for Developer Utility, like Git, Vim, Tmux, Sublime Text, Markdown, Shell.
 * [awesome-embedded-rust](https://github.com/rust-embedded/awesome-embedded-rust) - Curated list of resources for Embedded and Low-level development in the Rust programming languague.
 
-## BOOKs
+## BOOKs（PDF）
 
 * [Mastering the Raspberry Pi](http://mensshed-llandudno.co.uk/wp-content/uploads/Mastering%20the%20Raspberry%20Pi.pdf)
 * [Modern C](http://icube-icps.unistra.fr/img_auth.php/d/db/ModernC.pdf)
 
-
-##  [SoC开发平台](http://www.qitas.cn)  
+##  [SoC资源平台](https://github.com/sochub)
