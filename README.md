@@ -15,7 +15,7 @@
     - [STM32F](#stm32)
     - [ESP8266](#esp8266)
   - [RTOS](#rtos)
-  - [Linux](#linux-programming)
+  - [Linux](#linux)
   - [other OS](#os)
   - [Bootloader](#bootloader)
   - [Compiler](#compiler)
@@ -103,36 +103,6 @@
 * [Wi-FI ESP8266 learning journey](https://github.com/xuhongv/StudyInEsp8266)
 * [Wi-FI ESP32 learning journey](https://github.com/xuhongv/StudyInEsp32)
 
-## Beaglebone
-
-* [BeagleBone Black I2C References](https://datko.net/2013/11/03/bbb_i2c/)
-* [Learning BeagleBone Python Programming](https://hub.packtpub.com/learning-beaglebone-python-programming/)
-* [Simple implementation of an OS for the BeagleBoard C4 with ARMv7 A8 processor.](https://github.com/Oxydation/MinionOS)
-* [Various projects that utilize low level hardware instructions to interface with leds, speaker output and joystick input.](https://github.com/travelln/beaglebone-projects)
-* [Windows Embedded Compact BSP for TI's Beaglebone](https://github.com/dvescovi1/WECBeagleBone)
-* [BBB-BareMetal](https://github.com/allexoll/BBB-BareMetal)- Works on the beaglebone black (bare metal)
-* [Running a Baremetal Beaglebone Black](https://www.twosixlabs.com/running-a-baremetal-beaglebone-black-part-1/) & [Part 2](https://www.twosixlabs.com/running-a-baremetal-beaglebone-black-part-2/)
-* [Bare Metal on the BeagleBone (Black and Green)](https://www.cs.sfu.ca/CourseCentral/433/bfraser/other/BareMetalGuide.pdf) & [link1](https://www.cs.sfu.ca/CourseCentral/433/bfraser/other/) + [Link2](https://www.cs.sfu.ca/CourseCentral/433/bfraser/weekly.html)
-* [A tutorial on bare-metal [OS] development on the Texas Instruments BeagleBoard.](https://wiki.osdev.org/ARM_Beagleboard)
-* [bare metal c project for beaglebone, ti sitara am335x](https://github.com/0xCA5A/kickstart/tree/master/beaglebone/bare_metal_hello_world)
-* [Bare Metal Applications on OSD335x using U-Boot](https://octavosystems.com/app_notes/bare-metal-on-osd335x-using-u-boot/#_Toc382081430)
-* [bbb-asm-demo](https://github.com/mvduin/bbb-asm-demo) - Extremely tiny baremetal application for BeagleBone Black
-* [Beaglebone - Getting started with JTAG and CCS](https://beagleboard.org/static/beaglebone/latest/Docs/ccs-jtag-simple.htm)
-* [BeagleBoardJTAG](https://elinux.org/BeagleBoardJTAG)
-* [beaglebone_samples](https://github.com/dwelch67/beaglebone_samples)
-* [FreeRTOS for BeagleBone Black](https://github.com/henfos/BBBFreeRTOS)
-
-## Linux Programming
-
-* [Linux inside](https://github.com/0xAX/linux-insides) - A little bit about a linux kernel
-* [Writing device drivers in Linux](http://freesoftwaremagazine.com/articles/drivers_linux/)
-* [YOLINUX Tutorials](http://www.yolinux.com/TUTORIALS/)
-* [Linux driver programming](https://sites.google.com/site/embedded247/ddcourse)
-* [Free training materials and conference presentations](https://bootlin.com/docs/)
-* [eBook: Linux Drivers](https://sysplay.github.io/books/LinuxDrivers/book/index.html) or [Slides: Linux Drivers](https://sysplay.in/index.php?pagefile=linux_drivers)
-* [c-periphery](https://github.com/vsergeev/c-periphery) - A C library for peripheral I/O (GPIO, SPI, I2C, MMIO, Serial) in Linux.
-* Community: [OpenEmbedded](http://www.openembedded.org/wiki/Main_Page),
-* [Linux driver practices ](https://github.com/starnight/DriverPractice)
 
 
 ## RTOS
@@ -174,6 +144,18 @@
 * [µOS++ Reference](http://micro-os-plus.github.io/develop/references/)
 * [TNKernel](http://www.tnkernel.com/index.html) - a compact and very fast real-time kernel for the embedded 32/16/8 bits microprocessors.
 * [Femto OS](http://www.femtoos.org/news.html) - a very concise portable real time - preemptive operating system (RTOS) for embedded microcontrollers with minimal ram and flash, say 2KB .. 16KB flash and 128 .. 1024 bytes ram.
+
+## Linux
+
+* [Linux inside](https://github.com/0xAX/linux-insides) - A little bit about a linux kernel
+* [Writing device drivers in Linux](http://freesoftwaremagazine.com/articles/drivers_linux/)
+* [YOLINUX Tutorials](http://www.yolinux.com/TUTORIALS/)
+* [Linux driver programming](https://sites.google.com/site/embedded247/ddcourse)
+* [Free training materials and conference presentations](https://bootlin.com/docs/)
+* [eBook: Linux Drivers](https://sysplay.github.io/books/LinuxDrivers/book/index.html) or [Slides: Linux Drivers](https://sysplay.in/index.php?pagefile=linux_drivers)
+* [c-periphery](https://github.com/vsergeev/c-periphery) - A C library for peripheral I/O (GPIO, SPI, I2C, MMIO, Serial) in Linux.
+* Community: [OpenEmbedded](http://www.openembedded.org/wiki/Main_Page),
+* [Linux driver practices ](https://github.com/starnight/DriverPractice)
 
 ## OS
 
