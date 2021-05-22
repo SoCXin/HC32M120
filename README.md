@@ -9,7 +9,7 @@
 
 ## [简介](https://github.com/SoCXin/HC32M120/wiki)
 
-[HC32M120](https://github.com/SoCXin/HC32M120) 基于 Cortex®-M0+，集成最大 12 通道的 12bit 1MSPS ADC，2 个独立运算放大器（OPA），2 个独立电压比较器（CMP），1 个电机 Timer（Timer），1 个
+[HC32M120](https://www.hdsc.com.cn/Category84) 基于 Cortex®-M0+，集成最大 12 通道的 12bit 1MSPS ADC，2 个独立运算放大器（OPA），2 个独立电压比较器（CMP），1 个电机 Timer（Timer），1 个
 多功能 16bit Timer（TimerA）支持正交编码输入、输入捕捉、输出捕捉、PWM 输出，
 4 个多功能 16bit Timer（TimerB）支持输入捕捉、输出比较、PWM 输出，1 个 16bit Timer
 （Timer2）支持异步计数，1 个 16bit Timer（Timer0），1 个 I2C 通信接口，1 个 SPI 通
@@ -26,9 +26,9 @@
 
 #### 封装规格
 
-* LQFP32（7*7）
-* LQFP48（7*7）
-* TQFP48（7*7,0.5mm,H1.2mm,HC32M140）
+* LQFP32（7*7,0.8mm,H1.6mm）
+* LQFP48（7*7,0.5mm,H1.6mm）
+* HC32M140:TQFP48（7*7,0.5mm,H1.2mm）
 
 ### [资源收录](https://github.com/SoCXin)
 

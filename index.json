@@ -9,11 +9,16 @@
     "package":["LQFP32","LQFP48","TQFP48"],
     "SRAM":4,
     "Flash":32,
-    "DATA":128,
-    "UART": {
-        "num": 2,
-        "FIFO": 16,
-        "ISO7816": 1,
+    "USART0": {
+        "LIN": 1,
+        "more":["BUAD","LIN","IrDA"]
+    },
+    "USART1": {
+        "LIN": 1,
+        "more":["BUAD","LIN","IrDA"]
+    },
+    "USART2": {
+        "LIN": 1,
         "more":["BUAD","LIN","IrDA"]
     },
     "ADC": {
@@ -22,14 +27,31 @@
         "resolution": 12,
         "rate": 2400
     },
+    "IIC": {
+        "num": 1,
+        "channel": 8,
+        "resolution": 12,
+        "rate": 2400
+    },
+    "DMA": {
+        "num": 2,
+        "rate": 2400
+    },
+    "CMP": {
+        "num": 2,
+        "rate": 2400
+    },
+    "OPA": {
+        "num": 2,
+        "rate": 2400
+    },
     "TIM": {
         "resolution":[16,16,16],
         "rate": 1024
     },
     "PWR": {
-        "VDD": [2800,5000],
+        "VDD": [2700,5500],
         "Ivdd": 3.5,
-        "LDO": [5000,3300],
         "rate": 1024
     },
     "PWM": {
@@ -37,13 +59,7 @@
         "resolution": 8,
         "rate": 256
     },
-    "upload": {
-        "ISP": true,
-        "IAP": true,
-        "SWD": true,
-        "speed": 115200
-    },
-    "vendor":"nuvoton",
+    "vendor":"hdsc",
     "url":"http://www.SoC.xin/HC32M120",
     "repo":"https://github.com/SoCXin/HC32M120",
     "version":"1.0.0"
