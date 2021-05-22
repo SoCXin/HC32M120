@@ -9,13 +9,7 @@ config
 .settings
 mpu_*
 *launch
-*.dep
-*.log
-*.ewt
-*.ewd
-*.sfr
-RTE
-*sc*
+# *sc*
 *cm23*
 *cm3*
 *cm7*
@@ -23,8 +17,6 @@ RTE
 *cm0*
 *.txt
 *.chm
-.pio/
-.vscode/
 *.bin
 *.out
 *.o
