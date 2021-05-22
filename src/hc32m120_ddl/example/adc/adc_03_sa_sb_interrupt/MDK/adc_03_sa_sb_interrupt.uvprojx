@@ -6,16 +6,17 @@
   <Header>### uVision Project, (C) Keil Software</Header>
 
   <Targets>
-  <Target>
+    <Target>
       <TargetName>adc_03_sa_sb_interrupt_Debug</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060020::V5.06 (build 20)::ARMCC</pCCUsed>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>HC32M120J6TB</Device>
           <Vendor>HDSC</Vendor>
-          <PackID>HDSC.HC32M120.1.0.0</PackID>
+          <PackID>HDSC.HC32M120.1.0.6</PackID>
           <PackURL>https://raw.githubusercontent.com/hdscmcu/pack/master/</PackURL>
           <Cpu>IROM(0x00000000,0x8000) IRAM(0x20000000,0x1000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -125,47 +126,6 @@
             <HexOffset>0</HexOffset>
             <Oh166RecLen>16</Oh166RecLen>
           </OPTHX>
-          <Simulator>
-            <UseSimulator>0</UseSimulator>
-            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>1</RunToMain>
-            <RestoreBreakpoints>1</RestoreBreakpoints>
-            <RestoreWatchpoints>1</RestoreWatchpoints>
-            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
-            <RestoreFunctions>1</RestoreFunctions>
-            <RestoreToolbox>1</RestoreToolbox>
-            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
-            <RestoreSysVw>1</RestoreSysVw>
-          </Simulator>
-          <Target>
-            <UseTarget>1</UseTarget>
-            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>1</RunToMain>
-            <RestoreBreakpoints>1</RestoreBreakpoints>
-            <RestoreWatchpoints>1</RestoreWatchpoints>
-            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
-            <RestoreFunctions>0</RestoreFunctions>
-            <RestoreToolbox>1</RestoreToolbox>
-            <RestoreTracepoints>0</RestoreTracepoints>
-            <RestoreSysVw>1</RestoreSysVw>
-          </Target>
-          <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>12</TargetSelection>
-          <SimDlls>
-            <CpuDll></CpuDll>
-            <CpuDllArguments></CpuDllArguments>
-            <PeripheralDll></PeripheralDll>
-            <PeripheralDllArguments></PeripheralDllArguments>
-            <InitializationFile></InitializationFile>
-          </SimDlls>
-          <TargetDlls>
-            <CpuDll></CpuDll>
-            <CpuDllArguments></CpuDllArguments>
-            <PeripheralDll></PeripheralDll>
-            <PeripheralDllArguments></PeripheralDllArguments>
-            <InitializationFile></InitializationFile>
-            <Driver>BIN\CMSIS_AGDI.dll</Driver>
-          </TargetDlls>
         </DebugOption>
         <Utilities>
           <Flash1>
@@ -224,6 +184,8 @@
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
+            <RvdsMve>0</RvdsMve>
+            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -364,16 +326,20 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
+            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
             <vShortEn>0</vShortEn>
             <vShortWch>0</vShortWch>
+            <v6Lto>0</v6Lto>
+            <v6WtE>0</v6WtE>
+            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls>--diag_suppress=186,66</MiscControls>
               <Define>__DEBUG,HC32M120,USE_DDL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\..\mcu\common;..\source;..\..\..\..\driver\inc;<custom>{PROJ_MIDWARE_INC}</custom></IncludePath>
+              <IncludePath>..\..\..\..\mcu\common;..\source;..\..\..\..\driver\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -386,6 +352,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
+            <ClangAsOpt>1</ClangAsOpt>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -436,51 +403,53 @@
               <FileType>1</FileType>
               <FilePath>..\source\main.c</FilePath>
             </File>
-  <custom>{PROJ_USB_SRC}</custom> 
           </Files>
         </Group>
         <Group>
           <GroupName>driver</GroupName>
           <Files>
-            <!--
             <File>
-              <FileName>gpio.c</FileName>
+              <FileName>hc32m120_clk.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\driver\src\gpio.c</FilePath>
+              <FilePath>..\..\..\..\driver\src\hc32m120_clk.c</FilePath>
             </File>
-            -->
             <File>
-<FileName>hc32m120_clk.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_clk.c</FilePath></File>
-<File>
-<FileName>hc32m120_utility.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_utility.c</FilePath></File>
-<File>
-<FileName>hc32m120_interrupts.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_interrupts.c</FilePath></File>
-<File>
-<FileName>hc32m120_gpio.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_gpio.c</FilePath></File>
-<File>
-<FileName>hc32m120_adc.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_adc.c</FilePath></File>
-<File>
-<FileName>hc32m120_icg.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_icg.c</FilePath></File>
-
-    </Files>
-  </Group>
-  <custom>{PROJ_MIDWARE_SRC}</custom>
-  <Group>
-    <GroupName>Readme</GroupName>
-    <Files>
-        <File>
-            <FileName>Readme.txt</FileName>
-            <FileType>5</FileType>
-            <FilePath>..\Readme.txt</FilePath>
-        </File>
-    </Files>
-  </Group>
+              <FileName>hc32m120_utility.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\driver\src\hc32m120_utility.c</FilePath>
+            </File>
+            <File>
+              <FileName>hc32m120_interrupts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\driver\src\hc32m120_interrupts.c</FilePath>
+            </File>
+            <File>
+              <FileName>hc32m120_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\driver\src\hc32m120_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>hc32m120_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\driver\src\hc32m120_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>hc32m120_icg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\driver\src\hc32m120_icg.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Readme</GroupName>
+          <Files>
+            <File>
+              <FileName>Readme.txt</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Readme.txt</FilePath>
+            </File>
+          </Files>
+        </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
@@ -491,11 +460,12 @@
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060020::V5.06 (build 20)::ARMCC</pCCUsed>
+      <uAC6>8</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>HC32M120J6TB</Device>
           <Vendor>HDSC</Vendor>
-          <PackID>HDSC.HC32M120.1.0.0</PackID>
+          <PackID>HDSC.HC32M120.1.0.6</PackID>
           <PackURL>https://raw.githubusercontent.com/hdscmcu/pack/master/</PackURL>
           <Cpu>IROM(0x00000000,0x8000) IRAM(0x20000000,0x1000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ESEL ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -605,47 +575,6 @@
             <HexOffset>0</HexOffset>
             <Oh166RecLen>16</Oh166RecLen>
           </OPTHX>
-          <Simulator>
-            <UseSimulator>0</UseSimulator>
-            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>1</RunToMain>
-            <RestoreBreakpoints>1</RestoreBreakpoints>
-            <RestoreWatchpoints>1</RestoreWatchpoints>
-            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
-            <RestoreFunctions>1</RestoreFunctions>
-            <RestoreToolbox>1</RestoreToolbox>
-            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
-            <RestoreSysVw>1</RestoreSysVw>
-          </Simulator>
-          <Target>
-            <UseTarget>1</UseTarget>
-            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>1</RunToMain>
-            <RestoreBreakpoints>1</RestoreBreakpoints>
-            <RestoreWatchpoints>1</RestoreWatchpoints>
-            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
-            <RestoreFunctions>0</RestoreFunctions>
-            <RestoreToolbox>1</RestoreToolbox>
-            <RestoreTracepoints>0</RestoreTracepoints>
-            <RestoreSysVw>1</RestoreSysVw>
-          </Target>
-          <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>12</TargetSelection>
-          <SimDlls>
-            <CpuDll></CpuDll>
-            <CpuDllArguments></CpuDllArguments>
-            <PeripheralDll></PeripheralDll>
-            <PeripheralDllArguments></PeripheralDllArguments>
-            <InitializationFile></InitializationFile>
-          </SimDlls>
-          <TargetDlls>
-            <CpuDll></CpuDll>
-            <CpuDllArguments></CpuDllArguments>
-            <PeripheralDll></PeripheralDll>
-            <PeripheralDllArguments></PeripheralDllArguments>
-            <InitializationFile></InitializationFile>
-            <Driver>BIN\CMSIS_AGDI.dll</Driver>
-          </TargetDlls>
         </DebugOption>
         <Utilities>
           <Flash1>
@@ -704,6 +633,8 @@
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
+            <RvdsMve>0</RvdsMve>
+            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -844,16 +775,20 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
+            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
             <vShortEn>0</vShortEn>
             <vShortWch>0</vShortWch>
+            <v6Lto>0</v6Lto>
+            <v6WtE>0</v6WtE>
+            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls>--diag_suppress=186,66</MiscControls>
               <Define>HC32M120,USE_DDL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\..\mcu\common;..\source;..\..\..\..\driver\inc;<custom>{PROJ_MIDWARE_INC}</custom></IncludePath>
+              <IncludePath>..\..\..\..\mcu\common;..\source;..\..\..\..\driver\inc;</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -866,6 +801,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
+            <ClangAsOpt>1</ClangAsOpt>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -916,51 +852,53 @@
               <FileType>1</FileType>
               <FilePath>..\source\main.c</FilePath>
             </File>
-  <custom>{PROJ_USB_SRC}</custom> 
           </Files>
         </Group>
         <Group>
           <GroupName>driver</GroupName>
           <Files>
-            <!--
             <File>
-              <FileName>gpio.c</FileName>
+              <FileName>hc32m120_clk.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\driver\src\gpio.c</FilePath>
+              <FilePath>..\..\..\..\driver\src\hc32m120_clk.c</FilePath>
             </File>
-            -->
             <File>
-<FileName>hc32m120_clk.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_clk.c</FilePath></File>
-<File>
-<FileName>hc32m120_utility.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_utility.c</FilePath></File>
-<File>
-<FileName>hc32m120_interrupts.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_interrupts.c</FilePath></File>
-<File>
-<FileName>hc32m120_gpio.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_gpio.c</FilePath></File>
-<File>
-<FileName>hc32m120_adc.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_adc.c</FilePath></File>
-<File>
-<FileName>hc32m120_icg.c</FileName>
-<FileType>1</FileType><FilePath>..\..\..\..\driver\src\hc32m120_icg.c</FilePath></File>
-
-    </Files>
-  </Group>
-  <custom>{PROJ_MIDWARE_SRC}</custom>
-  <Group>
-    <GroupName>Readme</GroupName>
-    <Files>
-        <File>
-            <FileName>Readme.txt</FileName>
-            <FileType>5</FileType>
-            <FilePath>..\Readme.txt</FilePath>
-        </File>
-    </Files>
-  </Group>
+              <FileName>hc32m120_utility.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\driver\src\hc32m120_utility.c</FilePath>
+            </File>
+            <File>
+              <FileName>hc32m120_interrupts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\driver\src\hc32m120_interrupts.c</FilePath>
+            </File>
+            <File>
+              <FileName>hc32m120_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\driver\src\hc32m120_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>hc32m120_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\driver\src\hc32m120_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>hc32m120_icg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\driver\src\hc32m120_icg.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Readme</GroupName>
+          <Files>
+            <File>
+              <FileName>Readme.txt</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Readme.txt</FilePath>
+            </File>
+          </Files>
+        </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
@@ -979,7 +917,22 @@
         </targetInfos>
       </component>
     </components>
-
+    <files/>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>&lt;Project Info&gt;</LayName>
+        <LayDesc></LayDesc>
+        <LayUrl></LayUrl>
+        <LayKeys></LayKeys>
+        <LayCat></LayCat>
+        <LayLic></LayLic>
+        <LayTarg>0</LayTarg>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>

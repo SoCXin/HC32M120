@@ -1,12 +1,13 @@
 .pio/
 .vscode/
-*.bin
-*.out
 *.o
 ~$*
 settings
 config
 .settings
+RTE
+output
+flashloader
 mpu_*
 *launch
 # *sc*
@@ -15,12 +16,11 @@ mpu_*
 *cm7*
 *cm1*
 *cm0*
-*.txt
+# *.txt
+README*
 *.chm
 *.bin
 *.out
-*.o
-~$*
 *.dep
 *.log
 *.ewt
@@ -29,10 +29,4 @@ mpu_*
 *.icf
 *uvgui*
 *uvopt*
-*.txt
 *.ini
-RTE
-output
-config
-settings
-flashloader
