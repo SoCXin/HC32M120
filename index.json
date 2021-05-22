@@ -1,14 +1,40 @@
 {
     "name":"HC32M120",
-    "series":["HC32M120J6TB","HC32M120F6TB","HC32M140J8TA"],
     "type":"MCU",
-    "Core":"Cortex-M0",
     "Freq":"48MHz",
+    "vendor":"hdsc",
+    "Core":"Cortex-M0",
     "description":"hdsc Cortex-M0 MCU",
-    "peripheral": ["ADC","IIC","UART","SPI","LDO","PWM"],
+    "homepage":"http://www.SoC.xin/HC32M120",
+    "keywords": [
+        "motor",
+        "hdsc",
+        "Cortex-M0",
+        "8-bit"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/HC32M120.git"
+    },
+    "version":"1.0.0",
+    "series":["HC32M120J6TB","HC32M120F6TB","HC32M140J8TA"],
     "package":["LQFP32","LQFP48","TQFP48"],
-    "SRAM":4,
-    "Flash":32,
+    "HC32M120J6TB": {
+        "package":"LQFP48",
+        "RAM":4,
+        "ROM":32,
+        "peripheral": ["ADC","IIC","UART","SPI","LDO","PWM"]
+    },
+    "HC32M120F6TB": {
+        "package":"LQFP32",
+        "SRAM":4,
+        "Flash":32
+    },
+    "HC32M140J8TA": {
+        "package":"TQFP48",
+        "SRAM":8,
+        "Flash":64
+    },
     "USART0": {
         "LIN": 1,
         "more":["BUAD","LIN","IrDA"]
@@ -58,9 +84,5 @@
         "num": 2,
         "resolution": 8,
         "rate": 256
-    },
-    "vendor":"hdsc",
-    "url":"http://www.SoC.xin/HC32M120",
-    "repo":"https://github.com/SoCXin/HC32M120",
-    "version":"1.0.0"
+    }
 }
