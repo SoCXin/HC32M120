@@ -29,9 +29,10 @@
 
 ### [资源收录](https://github.com/SoCXin)
 
-* [参考文档](docs/)
 * [参考资源](src/)
+* [参考文档](docs/)
 * [参考工程](project/)
+* [入门教程](https://docs.soc.xin/HC32M120)
 
 ### [选型建议](https://github.com/SoCXin)
 
